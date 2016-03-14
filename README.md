@@ -1,0 +1,1 @@
+Example application showing broken SASS globbing.
