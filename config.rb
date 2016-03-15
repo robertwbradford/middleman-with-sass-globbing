@@ -1,3 +1,19 @@
+set :css_dir, 'assets/stylesheets'
+
+# Change Compass configuration
+compass_config do |config|
+  config.add_import_path "../bower_components/foundation/scss"
+  config.output_style = :compact
+end
+
+
+after_configuration do
+  sprockets.append_path File.join root, "bower_components"
+  # sprockets.append_path File.join root, config[:css_dir]
+end
+
+
+
 ###
 # Page options, layouts, aliases and proxies
 ###
